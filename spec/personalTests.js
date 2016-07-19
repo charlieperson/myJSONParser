@@ -9,3 +9,4 @@ function assert(x, y) {
 assert(JSON.parse('[]'), parseJSON('[]'));
 assert(JSON.parse('{"foo": ""}'), parseJSON('{"foo": ""}'));
 assert(JSON.parse('{}'), parseJSON('{}'));
+assert(JSON.parse('{"foo": "bar"}'), parseJSON('{"foo": "bar"}'));

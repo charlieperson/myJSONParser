@@ -6,7 +6,8 @@ var parseJSON = function(json) {
     var obj = {};
     var indexOfColon = _.indexOf(array, ':');
     var key = array.slice(2, indexOfColon-1).join('');
-    obj[key] = "";
+    var value = array.slice(indexOfColon+3, array.length-2).join('');
+    obj[key] = value;
     return obj;
   }
 };
