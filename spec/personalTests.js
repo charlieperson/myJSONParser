@@ -10,3 +10,4 @@ assert(JSON.parse('[]'), parseJSON('[]'));
 assert(JSON.parse('{"foo": ""}'), parseJSON('{"foo": ""}'));
 assert(JSON.parse('{}'), parseJSON('{}'));
 assert(JSON.parse('{"foo": "bar"}'), parseJSON('{"foo": "bar"}'));
+assert(JSON.parse('["one", "two"]'), parseJSON('["one", "two"]'));
